@@ -57,7 +57,7 @@ $(document).ready(function() {
 
                 $('#help-queue-table').append(
                     $('<tr>').append(
-                        $('<td>').text(item[0] + " " + item[1][0]),
+                        $('<td>').text(item[0] + " " + item[1]),
                         $('<td>').text(item[2]),
                         $('<td>').append(
                             $('<a>').addClass("btn-floating btn-small waves-effect waves-light red "+pulse).append(
