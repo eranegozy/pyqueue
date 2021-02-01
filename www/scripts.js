@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    var site_base_url = 'http://localhost:5000';
+    // var site_base_url = 'http://localhost:5000';
+    var site_base_url = 'http://eranegozy.pythonanywhere.com'
     var refresh_interval = 1500;
 
     // button handler for help queue
