@@ -45,11 +45,10 @@ $(document).ready(function() {
 
     // refresh the lab queue every `refresh_interval` seconds
     setInterval(function() {
-        console.log(site_base_url + "/queue/help");
-            $.ajax({
-                type: "GET",
-                url: site_base_url + "/queue/help"
-            }).then(function(data) {
+        $.ajax({
+            type: "GET",
+            url: site_base_url + "/queue/help"
+        }).then(function(data) {
             $('#help-queue-table').empty()
             if (data.message.length > 0) {console.log(data.message)};
             $.each(data.help_queue, function(i, item) {
@@ -72,10 +71,10 @@ $(document).ready(function() {
             });
         });
 
-            $.ajax({
-                type: "GET",
-                url: site_base_url + "/queue/checkoff"
-            }).then(function(data) {
+        $.ajax({
+            type: "GET",
+            url: site_base_url + "/queue/checkoff"
+        }).then(function(data) {
             $('#checkoff-queue-table').empty()
             if (data.message.length > 0) {console.log(data.message)};
             $.each(data.checkoff_queue, function(i, item) {
