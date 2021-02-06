@@ -45,7 +45,7 @@ $(document).ready(function() {
 
     // refresh the lab queue every `refresh_interval` seconds
     setInterval(function() {
-
+        console.log(site_base_url + "/queue/help");
             $.ajax({
                 type: "GET",
                 url: site_base_url + "/queue/help"
