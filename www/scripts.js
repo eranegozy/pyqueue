@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    // var site_base_url = 'http://localhost:5000';
-    // var site_base_url = 'http://eranegozy.pythonanywhere.com'
-
     var wl = window.location;
     var site_base_url = wl.protocol + '//' + wl.host;
     var refresh_interval = 1500;
